@@ -1,0 +1,32 @@
+@import "tailwindcss";
+#bottom{
+    background : linear-gradient(transparent,black)
+}
+/* Desktop */
+.Toastify__toast {
+  width: 360px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .Toastify__toast {
+    width: 260px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  /* Keep container at side */
+  .Toastify__toast-container--top-right {
+    right: 0;
+    top: 1rem;
+  }
+
+  .Toastify__toast-container--top-left {
+    left: 0;
+    top: 1rem;
+  }
+}
+
