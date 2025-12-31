@@ -2,6 +2,10 @@
 
 A small React application scaffolded with Vite, using Redux Toolkit for state management and TailwindCSS for styling. This README describes how to run, build, and maintain the project.
 
+## Live demo
+
+Visit the live project: [Live link](https://abpixel.netlify.app)
+
 **Quick summary**: React 19, Vite, Redux Toolkit, TailwindCSS, React Router, Axios, React Toastify.
 
 **Main files & folders**
