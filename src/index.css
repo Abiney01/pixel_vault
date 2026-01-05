@@ -30,3 +30,15 @@
   }
 }
 
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+.animate-fade {
+  animation: fade 1.2s linear infinite;
+}

@@ -8,6 +8,7 @@ import {
 } from "../redux/features/searchSlice";
 import { useEffect } from "react";
 import ResultCard from "./ResultCard";
+import Loader from "./Loader";
 
 const ResultGrid = () => {
   const { query, activeTab, results, loading, error } = useSelector(
@@ -64,13 +65,16 @@ const ResultGrid = () => {
   }, [query, activeTab, dispatch]);
   return (
     <div className="flex justify-center flex-wrap gap-6 overflow-auto p-10">
-      {results.map((item, idx) => {
+      {loading? (<Loader/>) : error? (<h1 className="text-orange-500 font-medium text-2xl uppercase">{error}</h1>) : (
+      results.map((item, idx) => {
         return (
           <div key={idx}>
             <ResultCard item={item} />
           </div>
         );
-      })}
+      })
+    )
+    }
     </div>
   );
 };
